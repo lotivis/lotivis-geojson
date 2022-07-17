@@ -5,6 +5,11 @@
   "author": "Lukas Danckwerth",
   "license": "MIT",
   "type": "module",
+  "homepage": "https://github.com/lukasdanckwerth/lotivis-geojson#readme",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/lukasdanckwerth/lotivis-geojson.git"
+  },
   "files": [
     "dist/**/*.js",
     "src/**/*.js"
@@ -16,6 +21,10 @@
   "exports": {
     "umd": "./dist/lotivis-geojson.min.js",
     "default": "./src/index.js"
+  },
+  "scripts": {
+    "build": "rollup --config",
+    "build:watch": "rollup --config --watch"
   },
   "dependencies": {
     "@rollup/plugin-node-resolve": "^13.3.0",
