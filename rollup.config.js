@@ -24,6 +24,10 @@ const config = {
     ),
   },
   plugins: [nodeResolve()],
+  onwarn(message, warn) {
+    if (message.code === "CIRCULAR_DEPENDENCY") return;
+    warn(message);
+  },
 };
 
 export default [
