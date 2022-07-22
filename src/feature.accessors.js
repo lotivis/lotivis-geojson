@@ -1,4 +1,6 @@
-import { isValue } from "./values.js";
+function isValue(value) {
+  return Boolean(value || value === 0);
+}
 
 /**
  * Default accessor for the id of a feature.

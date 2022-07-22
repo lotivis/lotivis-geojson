@@ -1,4 +1,6 @@
-import { copy } from "./values.js";
+function copy(object) {
+  return JSON.parse(JSON.stringify(object));
+}
 
 /* returns a GeoJSON FeatureCollection object */
 export function FeatureCollection(features) {
