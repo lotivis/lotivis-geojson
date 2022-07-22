@@ -1,5 +1,3 @@
-import { isString } from "./values.js";
-
 function hashString(s) {
   let hash = 0,
     i,
@@ -20,5 +18,5 @@ function hashString(s) {
  * @public
  */
 export function hash(input) {
-  return hashString(isString(input) ? input : JSON.stringify(input));
+  return hashString(typeof input === "string" ? input : JSON.stringify(input));
 }
