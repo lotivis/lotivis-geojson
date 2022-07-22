@@ -1,3 +1,5 @@
+import { hash } from "./hash.js";
+
 function isValue(value) {
   return Boolean(value || value === 0);
 }
