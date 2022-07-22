@@ -24,7 +24,7 @@ If you use npm, `npm install lotivis-geojson`. You can also download the [latest
 
 ### lotivis.**[geojsonFilter](./src/filter.js)**(json, ids, idValue)
 
-### lotivis.**[geojsonJoin](./src/join.js)**(GeoJSON | Array<Feature>)
+### lotivis.**[geojsonJoin](./src/join.js)**(GeoJSON | Array\<Feature\>)
 
 ### lotivis.**[geojsonRemove](./src/remove.js)**(json, ids, idValue)
 
