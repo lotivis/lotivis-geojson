@@ -5,3 +5,9 @@ export async function geojsonFetch(path) {
     .then((res) => res.json())
     .then((json) => GeoJSON(json));
 }
+
+export async function fetchGeojson(path) {
+  return fetch(path)
+    .then((res) => res.json())
+    .then((json) => GeoJSON(json));
+}

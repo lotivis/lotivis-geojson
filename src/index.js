@@ -1,5 +1,5 @@
 export { GeoJSON as geojson } from "./geojson.js";
-export { geojsonFetch } from "./fetch.js";
+export * from "./fetch.js";
 export { copy as geojsonCopy } from "./copy.js";
 export { generate as geojsonGenerate } from "./generate.js";
 export { filter as geojsonFilter } from "./filter.js";
